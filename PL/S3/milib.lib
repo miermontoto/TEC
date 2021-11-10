@@ -1,0 +1,2 @@
+* Mi libería del ejercicio k)
+.MODEL DIODO_BV3 D(BV=3)

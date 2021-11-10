@@ -1,0 +1,16 @@
+* C:\Users\under\OneDrive - Universidad de Oviedo\Uni\Y2T1\TEC\PL\S6\Draft2.asc
+V1 Ue 0 PULSE(0 5 1s 1ns 1ns 1s 2s)
+R1 N001 Ue 20k
+Q1 uce N001 0 0 QBD135
+L1 Ub uce 2800mH Rser=400
+V2 Ub 0 12V
+D1 uce Ub MUR460
+.model D D
+.lib C:\Users\under\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\under\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 5s
+.LIB BIPOLARES.LIB
+.backanno
+.end
