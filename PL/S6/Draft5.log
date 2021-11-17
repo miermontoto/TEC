@@ -1,0 +1,21 @@
+Circuit: * C:\Users\under\OneDrive - Universidad de Oviedo\Uni\Y2T1\TEC\PL\S6\Draft5.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Nov 10 17:41:44 2021
+Total elapsed time: 0.119 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3508
+traniter = 3459
+tranpoints = 1584
+accept = 1483
+rejected = 101
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1: 506 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.1
+
