@@ -1,0 +1,784 @@
+* zener diodes *
+****************
+*-----------------------------------------------------------------------------
+*(+) 1N746     3.3 V  0.5W  CASE DO-35
+.model D1N746   D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++		Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.3 Ibv=45.862m Nbv=3.0477
++		Ibvl=29.831m Nbvl=11.606 Tbv1=-636.4u)
+*		Motorola	pid=1N746	case=DO-35
+*		89-9-18 gjg
+*		Vz = 3.3 @ 20mA, Zz = 310 @ 1mA, Zz = 68 @ 5mA, Zz = 19 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N747     3.6 V  0.5W  CASE DO-35
+.model D1N747  D(Is=1.242f Rs=1.137 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=210p M=.6063
++		Vj=.75 Fc=.5 Isr=1.922n Nr=2 Bv=3.6 Ibv=13.987m Nbv=3.031
++		Ibvl=10.212m Nbvl=12.73 Tbv1=-555.6u)
+*		Motorola	pid=1N747	case=DO-35
+*		89-9-18 gjg
+*		Vz = 3.6 @ 20mA, Zz = 330 @ 1mA, Zz = 52 @ 5mA, Zz = 7.3 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N748     3.9 V  0.5W  CASE DO-35
+.model D1N748   D(Is=1.252f Rs=1.156 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=205p M=.6004
++		Vj=.75 Fc=.5 Isr=1.867n Nr=2 Bv=3.9 Ibv=17.244m Nbv=2.4016
++		Ibvl=8.619m Nbvl=13.283 Tbv1=-384.62u)
+*		Motorola	pid=1N748	case=DO-35
+*		89-9-18 gjg
+*		Vz = 3.9 @ 20mA, Zz = 345 @ 1mA, Zz = 49 @ 5mA, Zz = 5.8 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N749     4.3 V  0.5W  CASE DO-35
+.model D1N749  D(Is=880.5E-18 Rs=.25 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=190p M=.6124
++		Vj=.75 Fc=.5 Isr=1.743n Nr=2 Bv=4.3 Ibv=16.748m Nbv=1.7936
++		Ibvl=5.0382m Nbvl=12.554 Tbv1=-232.56u)
+*		Motorola	pid=1N749	case=DO-35
+*		89-9-18 gjg
+*		Vz = 4.3 @ 20mA, Zz = 325 @ 1mA, Zz = 24 @ 5mA, Zz = 3.2 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N750     4.7 V  0.5W  CASE DO-35
+.model D1N750  D(Is=880.5E-18 Rs=.25 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=175p M=.5516
++		Vj=.75 Fc=.5 Isr=1.859n Nr=2 Bv=4.7 Ibv=20.245m Nbv=1.6989
++		Ibvl=1.9556m Nbvl=14.976 Tbv1=-21.277u)
+*		Motorola	pid=1N750	case=DO-35
+*		89-9-18 gjg
+*		Vz = 4.7 @ 20mA, Zz = 300 @ 1mA, Zz = 12.5 @ 5mA, Zz =2.6  @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N751     5.1 V  0.5W  CASE DO-35
+.model D1N751  D(Is=1.004f Rs=.5875 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=160p M=.5484
++		Vj=.75 Fc=.5 Isr=1.8n Nr=2 Bv=5.1 Ibv=27.721m Nbv=1.1779
++		Ibvl=1.1646m Nbvl=21.894 Tbv1=176.47u)
+*		Motorola	pid=1N751	case=DO-35
+*		89-9-18-gjg
+*		Vz = 5.1 @ 20mA, Zz = 175 @ 1mA, Zz = 8.2 @ 5mA, Zz = 2.2 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N752     5.6 V  0.5W  CASE DO-35
+.model D1N752  D(Is=1.154f Rs=.9471 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=150p M=.5788
++		Vj=.75 Fc=.5 Isr=1.625n Nr=2 Bv=5.6 Ibv=62.583m Nbv=.62382
++		Ibvl=631.96u Nbvl=50 Tbv1=267.86u)
+*		Motorola	pid=1N752	case=DO-35
+*		89-9-18 gjg
+*		Vz = 5.6 @ 20mA, Zz = 40 @ 1mA, Zz = 4.5 @ 5mA, Zz = 1.9 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N753     6.2 V  0.5W  CASE DO-35
+.model D1N753  D(Is=1.536f Rs=1.687 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=130p M=.5259
++		Vj=.75 Fc=.5 Isr=1.719n Nr=2 Bv=6.2 Ibv=1.9685 Nbv=.28384
++		Ibvl=7.0094e-7 Nbvl=.29418 Tbv1=443.55u)
+*		Motorola	pid=1N753	case=DO-35
+*		89-9-18 gjg
+*		Vz = 6.2 @ 20mA, Zz = 9 @ 1mA, Zz = 3.4 @ 5mA, Zz = 1.85 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N754     6.8 V  0.5W  CASE DO-35
+.model D1N754  D(Is=1.616f Rs=1.818 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=120p M=.5117
++		Vj=.75 Fc=.5 Isr=1.698n Nr=2 Bv=6.8 Ibv=2.8814 Nbv=.28248
++		Ibvl=1.9426e-6 Nbvl=.27168 Tbv1=485.29u)
+*		Motorola	pid=1N754	case=DO-35
+*		89-9-19 gjg
+*		Vz = 6.8 @ 20mA, Zz = 9.1 @ 1mA, Zz = 3.5 @ 5mA, Zz = 2 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N755     7.5 V  0.5W  CASE DO-35
+.model D1N755  D(Is=2.077f Rs=2.467 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=104p M=.5061
++		Vj=.75 Fc=.5 Isr=1.645n Nr=2 Bv=7.5 Ibv=2.5701 Nbv=.39227
++		Ibvl=4.0222e-5 Nbvl=.25042 Tbv1=533.33u)
+*		Motorola	pid=1N755	case=DO-35
+*		89-9-18 gjg
+*		Vz = 7.5 @ 20mA, Zz = 12.5 @ 1mA, Zz = 5.3 @ 5mA, Zz = 2.3 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N756     8.2 V  0.5W  CASE DO-35
+.model D1N756   D(Is=2.453f Rs=2.9 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=90p M=.448
++		Vj=.75 Fc=.5 Isr=1.803n Nr=2 Bv=8.2 Ibv=1.5593 Nbv=.51406
++		Ibvl=8.3521e-5 Nbvl=.1313 Tbv1=585.366u)
+*		Motorola	pid=1N756	case=DO-35
+*		89-9-19 gjg
+*		Vz = 8.2 @ 20mA, Zz = 16 @ 1mA, Zz = 6.9 @ 5mA, Zz = 2.5 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N757     9.1 V  0.5W  CASE DO-35
+.model D1N757  D(Is=2.453f Rs=2.9 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=78p M=.4399
++		Vj=.75 Fc=.5 Isr=1.762n Nr=2 Bv=9.1 Ibv=.48516 Nbv=.7022
++		Ibvl=1m Nbvl=.13785 Tbv1=604.396u)
+*		Motorola	pid=1N757	case=DO-35
+*		89-9-18 gjg
+*		Vz = 9.1 @ 20mA, Zz = 21 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.7 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N758     10 V  0.5W  CASE DO-35
+.model D1N758  D(Is=1.953f Rs=2.305 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=68p M=.3856
++		Vj=.75 Fc=.5 Isr=1.939n Nr=2 Bv=10 Ibv=.16597 Nbv=.84122
++		Ibvl=1.003m Nbvl=.20892 Tbv1=650u)
+*		Motorola	pid=1N758	case=DO-35
+*		89-9-18 gjg
+*		Vz = 10 @ 20mA, Zz = 24 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.9 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N759     12 V  0.5W  CASE DO-35
+.model D1N759  D(Is=1.773f Rs=2.06 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=102p M=.4868
++		Vj=.75 Fc=.5 Isr=1.393n Nr=2 Bv=12 Ibv=79.489m Nbv=1.1528
++		Ibvl=142.9n Nbvl=.95108 Tbv1=700u)
+*		Motorola	pid=1N759	case=DO-35
+*		89-9-18 gjg
+*		Vz = 12 @ 20mA, Zz = 32 @ 1mA, Zz = 7.5 @ 5mA, Zz = 4 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N757A     6.8 V  0.5W  CASE DO-35
+.model D1N957A D(Is=1.616f Rs=1.82 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=120p M=.5117
++		Vj=.75 Fc=.5 Isr=1.698n Nr=2 Bv=6.8 Ibv=1.8441 Nbv=.28243
++		Ibvl=6.2172E-15 Nbvl=.50147 Tbv1=485.294u)
+*		Motorola	pid=1N957A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 6.8 @ 18.5mA, Zz = 9.1 @ 1mA, Zz = 3.5 @ 5mA, Zz = 2 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N758A     7.5 V  0.5W  CASE DO-35
+.model D1N958A D(Is=2.077f Rs=2.467 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=104p M=.5061
++		Vj=.75 Fc=.5 Isr=1.645n Nr=2 Bv=7.5 Ibv=.90645 Nbv=.39227
++		Ibvl=.5849n Nbvl=1.5122 Tbv1=533.33u)
+*		Motorola	pid=1N958A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 7.5 @ 16.5mA, Zz = 12.5 @ 1mA, Zz = 5.3 @ 5mA, Zz = 2.3 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N759A     8.2 V  0.5W  CASE DO-35
+.model D1N959A D(Is=2.491f Rs=2.938 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=90p M=.448
++		Vj=.75 Fc=.5 Isr=1.803n Nr=2 Bv=8.2 Ibv=.41558 Nbv=.51229
++		Ibvl=.65179n Nbvl=1.1568 Tbv1=585.37u)
+*		Motorola	pid=1N959A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 8.2 @ 15mA, Zz = 16 @ 1mA, Zz = 6.9 @ 5mA, Zz = 2.5 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N760A     9.1 V  0.5W  CASE DO-35
+.model D1N960A D(Is=2.168f Rs=2.578 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=78p M=.4399
++		Vj=.75 Fc=.5 Isr=1.762n Nr=2 Bv=9.1 Ibv=97.714m Nbv=.71712
++		Ibvl=.58975n Nbvl=.98128 Tbv1=604.4u)
+*		Motorola	pid=1N960A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 9.1 @ 14mA, Zz = 21 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.7 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N761A     10 V  0.5W  CASE DO-35
+.model D1N961A D(Is=1.953f Rs=2.305 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=68p M=.3856
++		Vj=.75 Fc=.5 Isr=1.939n Nr=2 Bv=10 Ibv=46.912m Nbv=.84122
++		Ibvl=626.74p Nbvl=.78605 Tbv1=650u)
+*		Motorola 	pid=1N961A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 10 @ 12.5mA, Zz = 24 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.9 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N762A     11 V  0.5W  CASE DO-35
+.model D1N962A D(Is=1.609f Rs=1.813 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=115p M=.4751
++		Vj=.75 Fc=.5 Isr=1.493n Nr=2 Bv=11 Ibv=24.084m Nbv=1.1052
++		Ibvl=149.27n Nbvl=.22862 Tbv1=672.73u)
+*		Motorola	pid=1N962A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 11 @ 11.5mA, Zz = 30.5 @ 1mA, Zz = 7.4 @ 5mA, Zz = 3.25 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N763A     12 V  0.5W  CASE DO-35
+.model D1N963A D(Is=1.773f Rs=2.061 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=102p M=.4868
++		Vj=.75 Fc=.5 Isr=1.393n Nr=2 Bv=12 Ibv=21.7m Nbv=1.1527
++		Ibvl=29.343n Nbvl=.245 Tbv1=700u)
+*		Motorola	pid=1N963A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 12 @ 10.5mA, Zz = 32 @ 1mA, Zz = 7.5 @ 5mA, Zz = 4 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N764A     13 V  0.5W  CASE DO-35
+.model D1N964A D(Is=2.253f Rs=2.678 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=90p M=.4558
++		Vj=.75 Fc=.5 Isr=1.461n Nr=2 Bv=13 Ibv=21.761m Nbv=1.1851
++		Ibvl=468.81n Nbvl=.65126 Tbv1=846.15u)
+*		Motorola	pid=1N964A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 13 @ 9.5mA, Zz = 33.5 @ 1mA, Zz = 8 @ 5mA, Zz = 4.9 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N765A     15 V  0.5W  CASE DO-35
+.model D1N965A D(Is=3.142f Rs=3.536 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=80.5p M=.4186
++		Vj=.75 Fc=.5 Isr=1.527n Nr=2 Bv=15 Ibv=24.573m Nbv=1.0932
++		Ibvl=7.1249u Nbvl=.65646 Tbv1=833.33u)
+*		Motorola	pid=1N965A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 15 @ 8.5mA, Zz = 32 @ 1mA, Zz = 8.25 @ 5mA, Zz = 5.75 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N966A     16 V  0.5W  CASE DO-35
+.model D1N966A D(Is=5.461f Rs=4.975 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=69p M=.4472
++		Vj=.75 Fc=.5 Isr=1.371n Nr=2 Bv=16 Ibv=32.07m Nbv=1.0589
++		Ibvl=44.191u Nbvl=.86786 Tbv1=875u)
+*		Motorola	pid=1N966A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 16 @ 7.8mA, Zz = 32.5 @ 1mA, Zz = 9.8 @ 5mA, Zz = 6.9 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N967A     18 V  0.5W  CASE DO-35
+.model D1N967A  D(Is=7.021f Rs=5.619 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=60p M=.4093
++		Vj=.75 Fc=.5 Isr=1.461n Nr=2 Bv=18 Ibv=23.333m Nbv=1.2074
++		Ibvl=215.7u Nbvl=.71348 Tbv1=888.9u)
+*		Motorola 	pid=1N967A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 18 @ 7mA, Zz = 37 @ 1mA, Zz = 11 @ 5mA, Zz = 7.9 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N968A     20 V  0.5W  CASE DO-35
+.model D1N968A D(Is=10.18f Rs=6.578 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=59p M=.4063
++		Vj=.75 Fc=.5 Isr=1.415n Nr=2 Bv=20 Ibv=21.603m Nbv=1.2514
++		Ibvl=218.21u Nbvl=1.2514 Tbv1=850u)
+*		Motorola	pid=1N968A 	case=DO-35
+*		89-9-18 gjg
+*		Vz = 20 @ 6.2mA, Zz = 39 @ 1mA, Zz = 13 @ 5mA, Zz = 8.25 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N969A     22 V  0.5W  CASE DO-35
+.model D1N969A D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++		Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=22 Ibv=20.578m Nbv=1.315
++		Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*		Motorola	pid=1N969A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N970A     24 V  0.5W  CASE DO-35
+.model D1N970A D(Is=25.64f Rs=8.973 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=44p M=.3798
++		Vj=.75 Fc=.5 Isr=1.438n Nr=2 Bv=24 Ibv=19.386m Nbv=1.3784
++		Ibvl=162.43u Nbvl=8.7919 Tbv1=895.83u)
+*		Motorola	pid=1N970A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 24 @ 5.2mA, Zz = 48 @ 1mA, Zz = 16 @ 5mA, Zz = 11 @ 20mA
+*-----------------------------------------------------------------------------
+*(+) 1N971A     27 V  0.5W  CASE DO-35
+.model D1N971A D(Is=81.47f Rs=11.96 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=42p M=.3983
++		Vj=.75 Fc=.5 Isr=1.294n Nr=2 Bv=27 Ibv=87.12m Nbv=.51025
++		Ibvl=9.0498m Nbvl=2.0249 Tbv1=888.89u)
+*		Motorola	pid=1N971A	case=DO-35
+*		89-9-18 gjg
+*		Vz = 27 @ 4.6mA, Zz = 52 @ 1mA, Zz = 21 @ 5mA, Zz = 12 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4728    3.3 Volt ñ5% 1W zener diode
+.model D1N4728  D(Is=11.11f Rs=6.808 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=315p M=.4346
++               Vj=.75 Fc=.5 Isr=2.595n Nr=2 Bv=3.3 Ibv=5.8452 Nbv=3.6742
++               Ibvl=.27224 Nbvl=11.715 Tbv1=-636.36u)
+*               Motorola        pid=1N4728      case=DO-41
+*               89-9-19 gjg
+*               Vz = 3.3 @ 76mA, Zz = 310 @ 1mA, Zz = 68 @ 5mA, Zz = 19 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4729    3.6 Volt ñ5% 1W zener diode
+.model D1N4729  D(Is=2.306f Rs=2.741 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=300p M=.4641
++               Vj=.75 Fc=.5 Isr=2.405n Nr=2 Bv=3.6 Ibv=1.1936 Nbv=2.2747
++               Ibvl=19.94m Nbvl=12.64 Tbv1=-555.56u)
+*               Motorola        pid=1N4729      case=DO-41
+*               89-9-19 gjg
+*               Vz = 3.6 @ 69mA, Zz = 330 @ 1mA, Zz = 52 @ 5mA, Zz = 7.3 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4730    3.9 Volt ñ5% 1W zener diode
+.model D1N4730  D(Is=1.379f Rs=1.406 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=280p M=.4369
++               Vj=.75 Fc=.5 Isr=2.441n Nr=2 Bv=3.9 Ibv=.2473 Nbv=2.2758
++               Ibvl=13.346m Nbvl=13.271 Tbv1=-384.62u)
+*               Motorola        pid=1N4730      case=DO-41
+*               89-9-19 gjg
+*               Vz = 3.9 @ 64mA, Zz = 345 @ 1mA, Zz = 49 @ 5mA, Zz = 5.8 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4731    4.3 Volt ñ5% 1W zener diode
+.model D1N4731  D(Is=837.3E-18 Rs=.1211 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.389
++               Vj=.75 Fc=.5 Isr=2.56n Nr=2 Bv=4.3 Ibv=60.167m Nbv=1.8815
++               Ibvl=6.0358m Nbvl=12.57 Tbv1=-232.558u)
+*               Motorola        pid=1N4731      case=DO-41
+*               89-9-19 gjg
+*               Vz = 4.3 @ 58mA, Zz = 325 @ 1mA, Zz = 24 @ 5mA, Zz = 3.2 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4732    4.7 Volt ñ5% 1W zener diode
+.model D1N4732  D(Is=1.064f Rs=.741 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=208p M=.4176
++               Vj=.75 Fc=.5 Isr=2.364n Nr=2 Bv=4.7 Ibv=.16902 Nbv=1.2344
++               Ibvl=4.0082m Nbvl=11.59 Tbv1=-21.28u)
+*               Motorola        pid=1N4732      case=DO-41
+*               89-9-19 gjg
+*               Vz = 4.7 @ 53mA, Zz = 300 @ 1mA, Zz = 12.5 @ 5mA, Zz =2.6  @ 20mA
+*----------------------------------------------------------------------------
+* 1N4733    5.1 Volt ñ5% 1W zener diode
+.model D1N4733  D(Is=1.214f Rs=1.078 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=185p M=.3509
++               Vj=.75 Fc=.5 Isr=2.601n Nr=2 Bv=5.1 Ibv=.70507 Nbv=.74348
++               Ibvl=4.8274m Nbvl=6.7393 Tbv1=176.471u)
+*               Motorola        pid=1N4733      case=DO-41
+*               89-9-19 gjg
+*               Vz = 5.1 @ 49mA, Zz = 175 @ 1mA, Zz = 8.2 @ 5mA, Zz = 2.2 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4734    5.6 Volt ñ5% 1W zener diode
+.model D1N4734  D(Is=1.085f Rs=.7945 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=157p M=.2966
++               Vj=.75 Fc=.5 Isr=2.811n Nr=2 Bv=5.6 Ibv=.37157 Nbv=.64726
++               Ibvl=1m Nbvl=6.5761 Tbv1=267.86u)
+*               Motorola        pid=1N4734      case=DO-41
+*               89-9-19 gjg
+*               Vz = 5.6 @ 45mA, Zz = 40 @ 1mA, Zz = 4.5 @ 5mA, Zz = 1.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4735    6.2 Volt ñ5% 1W zener diode
+.model D1N4735  D(Is=1.168f Rs=.9756 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=140p M=.3196
++               Vj=.75 Fc=.5 Isr=2.613n Nr=2 Bv=6.2 Ibv=4.9984 Nbv=.32088
++               Ibvl=184.78u Nbvl=.19558 Tbv1=443.55u)
+*               Motorola        pid=1N4735      case=DO-41
+*               89-9-19 gjg
+*               Vz = 6.2 @ 41mA, Zz = 9 @ 1mA, Zz = 3.4 @ 5mA, Zz = 1.85 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4736    6.8 Volt ñ5% 1W zener diode
+.model D1N4736  D(Is=1.327f Rs=1.306 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=125p M=.3144
++               Vj=.75 Fc=.5 Isr=2.575n Nr=2 Bv=6.8 Ibv=15 Nbv=.31009
++               Ibvl=149.2u Nbvl=.31028 Tbv1=485.29u)
+*               Motorola        pid=1N4736      case=DO-41
+*               89-9-19 gjg
+*               Vz = 6.8 @ 37mA, Zz = 9.1 @ 1mA, Zz = 3.5 @ 5mA, Zz = 2 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4737    7.5 Volt ñ5% 1W zener diode
+.model D1N4737  D(Is=1.699f Rs=1.955 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=106p M=.3176
++               Vj=.75 Fc=.5 Isr=2.488n Nr=2 Bv=7.5 Ibv=15 Nbv=.42018
++               Ibvl=1m Nbvl=.094527 Tbv1=533.33u)
+*               Motorola        pid=1N4737      case=DO-41
+*               89-9-19 gjg
+*               Vz = 7.5 @ 34mA, Zz = 12.5 @ 1mA, Zz = 5.3 @ 5mA, Zz = 2.3 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4738    8.2 Volt ñ5% 1W zener diode
+.model D1N4738  D(Is=2.102f Rs=2.5 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=100p M=.3503
++               Vj=.75 Fc=.5 Isr=2.252n Nr=2 Bv=8.2 Ibv=8 Nbv=.53621
++               Ibvl=213.52u Nbvl=.17879 Tbv1=585.37u)
+*               Motorola        pid=1N4738      case=DO-41
+*               89-9-19 gjg
+*               Vz = 8.2 @ 31mA, Zz = 16 @ 1mA, Zz = 6.9 @ 5mA, Zz = 2.5 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4739    9.1 Volt ñ5% 1W zener diode
+.model D1N4739  D(Is=2.11f Rs=2.512 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=89p M=.384
++               Vj=.75 Fc=.5 Isr=2.012n Nr=2 Bv=9.1 Ibv=1.2 Nbv=.72056
++               Ibvl=10m Nbvl=.21148 Tbv1=604.396u)
+*               Motorola        pid=1N4739      case=DO-41
+*               89-9-19 gjg
+*               Vz = 9.1 @ 28mA, Zz = 21 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.7 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4740    10  Volt ñ5% 1W zener diode
+.model D1N4740  D(Is=1.945f Rs=2.302 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=82p M=.3649
++               Vj=.75 Fc=.5 Isr=2.04n Nr=2 Bv=10 Ibv=.35034 Nbv=.84137
++               Ibvl=10m Nbvl=.17757 Tbv1=650u)
+*               Motorola        pid=1N4740      case=DO-41
+*               89-9-19 gjg
+*               Vz = 10 @ 25mA, Zz = 24 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4741    11  Volt ñ5% 1W zener diode
+.model D1N4741  D(Is=1.566f Rs=1.74 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=105p M=.4156
++               Vj=.75 Fc=.5 Isr=1.737n Nr=2 Bv=11 Ibv=92.573m Nbv=1.1098
++               Ibvl=440.66u Nbvl=.23096 Tbv1=672.73u)
+*               Motorola        pid=1N4741      case=DO-41
+*               89-9-19 gjg
+*               Vz = 11 @ 23mA, Zz = 30.5 @ 1mA, Zz = 7.4 @ 5mA, Zz = 3.25 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4742    12  Volt ñ5% 1W zener diode
+.model D1N4742  D(Is=1.773f Rs=2.06 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=100p M=.3894
++               Vj=.75 Fc=.5 Isr=1.799n Nr=2 Bv=12 Ibv=89.447m Nbv=1.1527
++               Ibvl=248.34n Nbvl=.8248 Tbv1=700u)
+*               Motorola        pid=1N4742      case=DO-41
+*               89-9-19 gjg
+*               Vz = 12 @ 21mA, Zz = 32 @ 1mA, Zz = 7.5 @ 5mA, Zz = 4 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4743    13  Volt ñ5% 1W zener diode
+.model D1N4743  D(Is=2.253f Rs=2.678 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=80p M=.3644
++               Vj=.75 Fc=.5 Isr=1.87n Nr=2 Bv=13 Ibv=99.671m Nbv=1.1851
++               Ibvl=8.4078u Nbvl=1.2407 Tbv1=846.15u)
+*               Motorola        pid=1N4743      case=DO-41
+*               89-9-19 gjg
+*               Vz = 13 @ 19mA, Zz = 33.5 @ 1mA, Zz = 8 @ 5mA, Zz = 4.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4744    15  Volt ñ5% 1W zener diode
+.model D1N4744  D(Is=3.142f Rs=3.544 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=72.5p M=.3282
++               Vj=.75 Fc=.5 Isr=1.973n Nr=2 Bv=15 Ibv=.14467 Nbv=1.093
++               Ibvl=.1m Nbvl=1.2722 Tbv1=001433.3u)
+*               Motorola        pid=1N4744      case=DO-41
+*               89-9-19 gjg
+*               Vz = 15 @ 17mA, Zz = 32 @ 1mA, Zz = 8.25 @ 5mA, Zz = 5.75 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4745    16  Volt ñ5% 1W zener diode
+.model D1N4745  D(Is=5.461f Rs=4.974 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=68p M=.3197
++               Vj=.75 Fc=.5 Isr=1.982n Nr=2 Bv=16 Ibv=.25684 Nbv=1.0588
++               Ibvl=1.029m Nbvl=1.0409 Tbv1=875u)
+*               Motorola        pid=1N4745      case=DO-41
+*               89-9-19 gjg
+*               Vz = 16 @ 15.5mA, Zz = 32.5 @ 1mA, Zz = 9.8 @ 5mA, Zz = 6.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4746    18  Volt ñ5% 1W zener diode
+.model D1N4746  D(Is=6.994f Rs=5.612 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=59p M=.2906
++               Vj=.75 Fc=.5 Isr=2.088n Nr=2 Bv=18 Ibv=.17098 Nbv=1.2072
++               Ibvl=2.002m Nbvl=1.1457 Tbv1=888.89u)
+*               Motorola        pid=1N4746      case=DO-41
+*               89-9-19 gjg
+*               Vz = 18 @ 14mA, Zz = 37 @ 1mA, Zz = 11 @ 5mA, Zz = 7.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4747    20  Volt ñ5% 1W zener diode
+.model D1N4747  D(Is=10.22f Rs=6.585 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=52p M=.2904
++               Vj=.75 Fc=.5 Isr=2.029n Nr=2 Bv=20 Ibv=.15934 Nbv=1.2472
++               Ibvl=211.18u Nbvl=1.9765 Tbv1=850u)
+*               Motorola        pid=1N4747      case=DO-41
+*               89-9-19 gjg
+*               Vz = 20 @ 12.5mA, Zz = 39 @ 1mA, Zz = 13 @ 5mA, Zz = 8.25 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4748    22  Volt ñ5% 1W zener diode
+.model D1N4748  D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=49p M=.2829
++               Vj=.75 Fc=.5 Isr=2.024n Nr=2 Bv=22 Ibv=.16996 Nbv=1.315
++               Ibvl=7.0073E-15 Nbvl=1.2735 Tbv1=840.91u)
+*               Motorola        pid=1N4748      case=DO-41
+*               89-9-19 gjg
+*               Vz = 22 @ 11.5mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4749    24  Volt ñ5% 1W zener diode
+.model D1N4749  D(Is=25.94f Rs=9.006 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=41p M=.2715
++               Vj=.75 Fc=.5 Isr=2.052n Nr=2 Bv=24 Ibv=.14951 Nbv=1.3684
++               Ibvl=164.37u Nbvl=14 Tbv1=895.83u)
+*               Motorola        pid=1N4749      case=DO-41
+*               89-9-19 gjg
+*               Vz = 24 @ 10.5mA, Zz = 48 @ 1mA, Zz = 16 @ 5mA, Zz = 11 @ 20mA
+*----------------------------------------------------------------------------
+* 1N4750    27  Volt ñ5% 1W zener diode
+.model D1N4750  D(Is=62.63f Rs=11.28 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=40p M=.2906
++               Vj=.75 Fc=.5 Isr=1.864n Nr=2 Bv=27 Ibv=.13378 Nbv=1.5283
++               Ibvl=3.4328m Nbvl=2.3046 Tbv1=888.89u)
+*               Motorola        pid=1N4750      case=DO-41
+*               89-9-19 gjg
+*               Vz = 27 @ 9.5mA, Zz = 52 @ 1mA, Zz = 21 @ 5mA, Zz = 12 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5226    3.3 Volt ñ5% «W zener diode
+.model D1N5226  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++               Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.3 Ibv=45.862m Nbv=3.0477
++               Ibvl=29.831m Nbvl=11.606 Tbv1=-636.36u)
+*               Motorola        pid=1N5226      case=DO-35
+*               89-9-18 gjg
+*               Vz = 3.3 @ 20mA, Zz = 310 @ 1mA, Zz = 68 @ 5mA, Zz = 19 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5227    3.6 Volt ñ5% «W zener diode
+.model D1N5227  D(Is=1.242f Rs=1.137 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=210p M=.6063
++               Vj=.75 Fc=.5 Isr=1.922n Nr=2 Bv=3.6 Ibv=13.987m Nbv=3.031
++               Ibvl=10.212m Nbvl=12.73 Tbv1=-555.56u)
+*               Motorola        pid=1N5227      case=DO-35
+*               89-9-18 gjg
+*               Vz = 3.6 @ 20mA, Zz = 330 @ 1mA, Zz = 52 @ 5mA, Zz = 7.3 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5228    3.9 Volt ñ5% «W zener diode
+.model D1N5228  D(Is=1.252f Rs=1.156 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=205p M=.6004
++               Vj=.75 Fc=.5 Isr=1.867n Nr=2 Bv=3.9 Ibv=17.244m Nbv=2.4016
++               Ibvl=8.619m Nbvl=13.283 Tbv1=-384.62u)
+*               Motorola        pid=1N5228      case=DO-35
+*               89-9-18 gjg
+*               Vz = 3.9 @ 20mA, Zz = 345 @ 1mA, Zz = 49 @ 5mA, Zz = 5.8 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5229    4.3 Volt ñ5% «W zener diode
+.model D1N5229  D(Is=880.5E-18 Rs=.25 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=190p M=.6124
++               Vj=.75 Fc=.5 Isr=1.743n Nr=2 Bv=4.3 Ibv=16.748m Nbv=1.7936
++               Ibvl=5.0382m Nbvl=12.554 Tbv1=-232.56u)
+*               Motorola        pid=1N5229      case=DO-35
+*               89-9-18 gjg
+*               Vz = 4.3 @ 20mA, Zz = 325 @ 1mA, Zz = 24 @ 5mA, Zz = 3.2 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5230    4.7 Volt ñ5% «W zener diode
+.model D1N5230  D(Is=880.5E-18 Rs=.25 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=175p M=.5516
++               Vj=.75 Fc=.5 Isr=1.859n Nr=2 Bv=4.7 Ibv=20.245m Nbv=1.6989
++               Ibvl=1.9556m Nbvl=14.976 Tbv1=-21.28u)
+*               Motorola        pid=1N5230      case=DO-35
+*               89-9-18 gjg
+*               Vz = 4.7 @ 20mA, Zz = 300 @ 1mA, Zz = 12.5 @ 5mA, Zz =2.6  @ 20mA
+*----------------------------------------------------------------------------
+* 1N5231    5.1 Volt ñ5% «W zener diode
+.model D1N5231  D(Is=1.004f Rs=.5875 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=160p M=.5484
++               Vj=.75 Fc=.5 Isr=1.8n Nr=2 Bv=5.1 Ibv=27.721m Nbv=1.1779
++               Ibvl=1.1646m Nbvl=21.894 Tbv1=176.47u)
+*               Motorola        pid=1N5231      case=DO-35
+*               89-9-18-gjg
+*               Vz = 5.1 @ 20mA, Zz = 175 @ 1mA, Zz = 8.2 @ 5mA, Zz = 2.2 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5232    5.6 Volt ñ5% «W zener diode
+.model D1N5232  D(Is=1.154f Rs=.9471 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=150p M=.5788
++               Vj=.75 Fc=.5 Isr=1.625n Nr=2 Bv=5.6 Ibv=62.583m Nbv=.62382
++               Ibvl=631.96u Nbvl=50 Tbv1=267.86u)
+*               Motorola        pid=1N5232      case=DO-35
+*               89-9-18 gjg
+*               Vz = 5.6 @ 20mA, Zz = 40 @ 1mA, Zz = 4.5 @ 5mA, Zz = 1.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5233      6 Volt ñ5% «W zener diode
+.model D1N5233  D(Is=629E-18 Rs=1.176 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=140p M=.5369
++               Vj=.75 Fc=.5 Isr=1.707n Nr=2 Bv=6 Ibv=.10969 Nbv=.5351
++               Ibvl=.11553 Nbvl=.049362 Tbv1=416.67u)
+*               Motorola        pid=1N5233      case=DO-35
+*               89-9-18 gjg
+*               Vz = 6 @ 20mA, Zz = 15 @ 1mA, Zz = 3.9 @ 5mA, Zz = 1.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5234    6.2 Volt ñ5% «W zener diode
+.model D1N5234  D(Is=1.536f Rs=1.687 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=130p M=.5259
++               Vj=.75 Fc=.5 Isr=1.719n Nr=2 Bv=6.2 Ibv=1.9685 Nbv=.28384
++               Ibvl=7.0094e-7 Nbvl=.29418 Tbv1=443.55u)
+*               Motorola        pid=1N5234      case=DO-35
+*               89-9-18 gjg
+*               Vz = 6.2 @ 20mA, Zz = 9 @ 1mA, Zz = 3.4 @ 5mA, Zz = 1.85 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5235    6.8 Volt ñ5% «W zener diode
+.model D1N5235  D(Is=1.616f Rs=1.818 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=120p M=.5117
++               Vj=.75 Fc=.5 Isr=1.698n Nr=2 Bv=6.8 Ibv=2.8814 Nbv=.28248
++               Ibvl=1.9426e-6 Nbvl=.27168 Tbv1=485.29u)
+*               Motorola        pid=1N5235      case=DO-35
+*               89-9-19 gjg
+*               Vz = 6.8 @ 20mA, Zz = 9.1 @ 1mA, Zz = 3.5 @ 5mA, Zz = 2 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5236    7.5 Volt ñ5% «W zener diode
+.model D1N5236  D(Is=2.077f Rs=2.467 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=104p M=.5061
++               Vj=.75 Fc=.5 Isr=1.645n Nr=2 Bv=7.5 Ibv=2.5701 Nbv=.39227
++               Ibvl=4.0222e-5 Nbvl=.25042 Tbv1=533.33u)
+*               Motorola        pid=1N5236      case=DO-35
+*               89-9-18 gjg
+*               Vz = 7.5 @ 20mA, Zz = 12.5 @ 1mA, Zz = 5.3 @ 5mA, Zz = 2.3 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5237    8.2 Volt ñ5% «W zener diode
+.model D1N5237  D(Is=2.453f Rs=2.9 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=90p M=.448
++               Vj=.75 Fc=.5 Isr=1.803n Nr=2 Bv=8.2 Ibv=1.5593 Nbv=.51406
++               Ibvl=8.3521e-5 Nbvl=.1313 Tbv1=585.37u)
+*               Motorola        pid=1N5237      case=DO-35
+*               89-9-19 gjg
+*               Vz = 8.2 @ 20mA, Zz = 16 @ 1mA, Zz = 6.9 @ 5mA, Zz = 2.5 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5238    8.7 Volt ñ5% «W zener diode
+.model D1N5238  D(Is=2.463f Rs=2.907 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=81p M=.3066
++               Vj=.75 Fc=.5 Isr=2.447n Nr=2 Bv=8.7 Ibv=1.1648 Nbv=.55226
++               Ibvl=16.469u Nbvl=.14431 Tbv1=586.21u)
+*               Motorola        pid=1N5238      case=DO-35
+*               89-9-18 gjg
+*               Vz = 8.7 @ 20mA, Zz = 17 @ 1mA, Zz = 7.1 @ 5mA, Zz = 2.5 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5239    9.1 Volt ñ5% «W zener diode
+.model D1N5239  D(Is=2.453f Rs=2.9 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=78p M=.4399
++               Vj=.75 Fc=.5 Isr=1.762n Nr=2 Bv=9.1 Ibv=.48516 Nbv=.7022
++               Ibvl=1m Nbvl=.13785 Tbv1=604.396u)
+*               Motorola        pid=1N5239      case=DO-35
+*               89-9-18 gjg
+*               Vz = 9.1 @ 20mA, Zz = 21 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.7 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5240     10 Volt ñ5% «W zener diode
+.model D1N5240  D(Is=1.953f Rs=2.305 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=68p M=.3856
++               Vj=.75 Fc=.5 Isr=1.939n Nr=2 Bv=10 Ibv=.16597 Nbv=.84122
++               Ibvl=1.003m Nbvl=.20892 Tbv1=650u)
+*               Motorola        pid=1N5240      case=DO-35
+*               89-9-18 gjg
+*               Vz = 10 @ 20mA, Zz = 24 @ 1mA, Zz = 7.25 @ 5mA, Zz = 2.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5241     11 Volt ñ5% «W zener diode
+.model D1N5241  D(Is=1.609f Rs=1.7386 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=115p M=.4751
++               Vj=.75 Fc=.5 Isr=1.493n Nr=2 Bv=11 Ibv=67.039m Nbv=1.1099
++               Ibvl=157.8u Nbvl=.23763 Tbv1=672.73u)
+*               Motorola        pid=1N5241      case=DO-35
+*               89-9-18 gjg
+*               Vz = 11 @ 20mA, Zz = 30.5 @ 1mA, Zz = 7.4 @ 5mA, Zz = 3.25 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5242     12 Volt ñ5% «W zener diode
+.model D1N5242  D(Is=1.773f Rs=2.06 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=102p M=.4868
++               Vj=.75 Fc=.5 Isr=1.393n Nr=2 Bv=12 Ibv=79.489m Nbv=1.1528
++               Ibvl=142.9n Nbvl=.95108 Tbv1=700u)
+*               Motorola        pid=1N5242      case=DO-35
+*               89-9-18 gjg
+*               Vz = 12 @ 20mA, Zz = 32 @ 1mA, Zz = 7.5 @ 5mA, Zz = 4 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5243     13 Volt ñ5% «W zener diode
+.model D1N5243  D(Is=2.253f Rs=2.678 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=90p M=.4558
++               Vj=.75 Fc=.5 Isr=1.461n Nr=2 Bv=13 Ibv=21.761m Nbv=1.1851
++               Ibvl=468.81n Nbvl=.65126 Tbv1=846.15u)
+*               Motorola        pid=1N5243      case=DO-35
+*               89-9-18 gjg
+*               Vz = 13 @ 9.5mA, Zz = 33.5 @ 1mA, Zz = 8 @ 5mA, Zz = 4.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5244     14 Volt ñ5% «W zener diode
+.model D1N5244  D(Is=2.579f Rs=3.025 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=83p M=.4217
++               Vj=.75 Fc=.5 Isr=1.556n Nr=2 Bv=14 Ibv=22.862m Nbv=1.1153
++               Ibvl=25.632u Nbvl=.60946 Tbv1=785.71u)
+*               Motorola        pid=1N5244      case=DO-35
+*               89-9-18 gjg
+*               Vz = 14 @ 9mA, Zz = 32 @ 1mA, Zz = 8.1 @ 5mA, Zz = 5.1 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5245     15 Volt ñ5% «W zener diode
+.model D1N5245  D(Is=3.142f Rs=3.536 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=80.5p M=.4186
++               Vj=.75 Fc=.5 Isr=1.527n Nr=2 Bv=15 Ibv=24.573m Nbv=1.0932
++               Ibvl=7.1249u Nbvl=.65646 Tbv1=833.33u)
+*               Motorola        pid=1N5245      case=DO-35
+*               89-9-18 gjg
+*               Vz = 15 @ 8.5mA, Zz = 32 @ 1mA, Zz = 8.25 @ 5mA, Zz = 5.75 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5246     16 Volt ñ5% «W zener diode
+.model D1N5246  D(Is=5.461f Rs=4.975 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=69p M=.4472
++               Vj=.75 Fc=.5 Isr=1.371n Nr=2 Bv=16 Ibv=32.07m Nbv=1.0589
++               Ibvl=44.191u Nbvl=.86786 Tbv1=875u)
+*               Motorola        pid=1N5246      case=DO-35
+*               89-9-18 gjg
+*               Vz = 16 @ 7.8mA, Zz = 32.5 @ 1mA, Zz = 9.8 @ 5mA, Zz = 6.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5247     17 Volt ñ5% «W zener diode
+.model D1N5247  D(Is=5.398f Rs=4.945 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=63p M=.4188
++               Vj=.75 Fc=.5 Isr=1.453n Nr=2 Bv=17 Ibv=25.923m Nbv=1.1189
++               Ibvl=324.66u Nbvl=.86905 Tbv1=823.53u)
+*               Motorola        pid=1N5247      case=DO-35
+*               89-9-18 gjg
+*               Vz = 17 @ 7.4mA, Zz = 34 @ 1mA, Zz = 10 @ 5mA, Zz = 7 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5248     18 Volt ñ5% «W zener diode
+.model D1N5248  D(Is=7.021f Rs=5.619 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=60p M=.4093
++               Vj=.75 Fc=.5 Isr=1.461n Nr=2 Bv=18 Ibv=23.333m Nbv=1.2074
++               Ibvl=215.7u Nbvl=.71348 Tbv1=888.89u)
+*               Motorola        pid=1N5248      case=DO-35
+*               89-9-18 gjg
+*               Vz = 18 @ 7mA, Zz = 37 @ 1mA, Zz = 11 @ 5mA, Zz = 7.9 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5249     19 Volt ñ5% «W zener diode
+.model D1N5249  D(Is=7.946f Rs=5.936 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=60p M=.4201
++               Vj=.75 Fc=.5 Isr=1.384n Nr=2 Bv=19 Ibv=23.157m Nbv=1.1973
++               Ibvl=302.56u Nbvl=.88158 Tbv1=894.74u)
+*               Motorola        pid=1N5249      case=DO-35
+*               89-9-18 gjg
+*               Vz = 19 @ 6.6mA, Zz = 37 @ 1mA, Zz = 11.5 @ 5mA, Zz = 8 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5250     20 Volt ñ5% «W zener diode
+.model D1N5250  D(Is=10.18f Rs=6.578 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=59p M=.4063
++               Vj=.75 Fc=.5 Isr=1.415n Nr=2 Bv=20 Ibv=21.603m Nbv=1.2514
++               Ibvl=218.21u Nbvl=1.2514 Tbv1=850u)
+*               Motorola        pid=1N5250      case=DO-35
+*               89-9-18 gjg
+*               Vz = 20 @ 6.2mA, Zz = 39 @ 1mA, Zz = 13 @ 5mA, Zz = 8.25 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5251     22 Volt ñ5% «W zener diode
+.model D1N5251  D(Is=17.49f Rs=7.976 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=50p M=.4141
++               Vj=.75 Fc=.5 Isr=1.33n Nr=2 Bv=22 Ibv=20.578m Nbv=1.315
++               Ibvl=207.85u Nbvl=1.315 Tbv1=840.91u)
+*               Motorola        pid=1N5251      case=DO-35
+*               89-9-18 gjg
+*               Vz = 22 @ 5.6mA, Zz = 42 @ 1mA, Zz = 15 @ 5mA, Zz = 9.5 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5252     24 Volt ñ5% «W zener diode
+.model D1N5252  D(Is=25.64f Rs=8.973 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=44p M=.3798
++               Vj=.75 Fc=.5 Isr=1.438n Nr=2 Bv=24 Ibv=19.386m Nbv=1.3784
++               Ibvl=162.43u Nbvl=8.7919 Tbv1=895.83u)
+*               Motorola        pid=1N5252      case=DO-35
+*               89-9-18 gjg
+*               Vz = 24 @ 5.2mA, Zz = 48 @ 1mA, Zz = 16 @ 5mA, Zz = 11 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5253     25 Volt ñ5% «W zener diode
+.model D1N5253  D(Is=34.8f Rs=9.761 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=43p M=.3908
++               Vj=.75 Fc=.5 Isr=1.366n Nr=2 Bv=25 Ibv=16.176m Nbv=1.529
++               Ibvl=687.1u Nbvl=2.256 Tbv1=880u)
+*               Motorola        pid=1N5253      case=DO-35
+*               89-9-81 gjg
+*               Vz = 25 @ 5mA, Zz = 50 @ 1mA, Zz = 19 @ 5mA, Zz = 11 @ 20mA
+*----------------------------------------------------------------------------
+* 1N5254     27 Volt ñ5% «W zener diode
+.model D1N5254  D(Is=81.47f Rs=11.96 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=42p M=.3983
++               Vj=.75 Fc=.5 Isr=1.294n Nr=2 Bv=27 Ibv=87.12m Nbv=.51025
++               Ibvl=9.0498m Nbvl=2.0249 Tbv1=888.89u)
+*               Motorola        pid=1N5254      case=DO-35
+*               89-9-18 gjg
+*               Vz = 27 @ 4.6mA, Zz = 52 @ 1mA, Zz = 21 @ 5mA, Zz = 12 @ 20mA
+*----------------------------------------------------------------------------
+
+* LED diodes *
+**************
+*----------------------------------------------------------------------------
+.model MLED15  D(Is=1.1p Rs=.66 Ikf=30m N=1.9 Xti=3 Cjo=40p M=.34 Vj=.75
++               Isr=30n Nr=3.8 Bv=6 Ibv=100u Tt=.5u)
+*----------------------------------------------------------------------------
+
+* general purpose bipolar transistors *
+***************************************
+*----------------------------------------------------------------------------
+.model Q2N3904  NPN(Is=6.734f Xti=3 Eg=1.11 Vaf=74.03 Bf=416.4 Ne=1.259
++               Ise=6.734f Ikf=66.78m Xtb=1.5 Br=.7371 Nc=2 Isc=0 Ikr=0 Rc=1
++               Cjc=3.638p Mjc=.3085 Vjc=.75 Fc=.5 Cje=4.493p Mje=.2593 Vje=.75
++               Tr=239.5n Tf=301.2p Itf=.4 Vtf=4 Xtf=2 Rb=10)
+*               National        pid=23          case=TO92
+*               88-09-08 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N3906  PNP(Is=1.41f Xti=3 Eg=1.11 Vaf=18.7 Bf=180.7 Ne=1.5 Ise=0
++               Ikf=80m Xtb=1.5 Br=4.977 Nc=2 Isc=0 Ikr=0 Rc=2.5 Cjc=9.728p
++               Mjc=.5776 Vjc=.75 Fc=.5 Cje=8.063p Mje=.3677 Vje=.75 Tr=33.42n
++               Tf=179.3p Itf=.4 Vtf=4 Xtf=6 Rb=10)
+*               National        pid=66          case=TO92
+*               88-09-09 bam    creation
+*----------------------------------------------------------------------------
+
+* high current bipolar transistor *
+***********************************
+*----------------------------------------------------------------------------
+.model Q2N2905  PNP(Is=650.6E-18 Xti=3 Eg=1.11 Vaf=115.7 Bf=231.7 Ne=1.829
++               Ise=54.81f Ikf=1.079 Xtb=1.5 Br=3.563 Nc=2 Isc=0 Ikr=0 Rc=.715
++               Cjc=14.76p Mjc=.5383 Vjc=.75 Fc=.5 Cje=19.82p Mje=.3357 Vje=.75
++               Tr=111.3n Tf=603.7p Itf=.65 Vtf=5 Xtf=1.7 Rb=10)
+*               National        pid=63          case=TO5
+*               88-09-09 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N2905A PNP(Is=650.6E-18 Xti=3 Eg=1.11 Vaf=115.7 Bf=231.7 Ne=1.829
++               Ise=54.81f Ikf=1.079 Xtb=1.5 Br=3.563 Nc=2 Isc=0 Ikr=0 Rc=.715
++               Cjc=14.76p Mjc=.5383 Vjc=.75 Fc=.5 Cje=19.82p Mje=.3357 Vje=.75
++               Tr=111.3n Tf=603.7p Itf=.65 Vtf=5 Xtf=1.7 Rb=10)
+*               National        pid=63          case=TO5
+*               88-09-09 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N2219  NPN(Is=14.34f Xti=3 Eg=1.11 Vaf=74.03 Bf=255.9 Ne=1.307
++               Ise=14.34f Ikf=.2847 Xtb=1.5 Br=6.092 Nc=2 Isc=0 Ikr=0 Rc=1
++               Cjc=7.306p Mjc=.3416 Vjc=.75 Fc=.5 Cje=22.01p Mje=.377 Vje=.75
++               Tr=46.91n Tf=411.1p Itf=.6 Vtf=1.7 Xtf=3 Rb=10)
+*               National        pid=19          case=TO5
+*               88-09-07 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N2219A NPN(Is=14.34f Xti=3 Eg=1.11 Vaf=74.03 Bf=255.9 Ne=1.307
++               Ise=14.34f Ikf=.2847 Xtb=1.5 Br=6.092 Nc=2 Isc=0 Ikr=0 Rc=1
++               Cjc=7.306p Mjc=.3416 Vjc=.75 Fc=.5 Cje=22.01p Mje=.377 Vje=.75
++               Tr=46.91n Tf=411.1p Itf=.6 Vtf=1.7 Xtf=3 Rb=10)
+*               National        pid=19          case=TO5
+*               88-09-07 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N2222  NPN(Is=14.34f Xti=3 Eg=1.11 Vaf=74.03 Bf=255.9 Ne=1.307
++		Ise=14.34f Ikf=.2847 Xtb=1.5 Br=6.092 Nc=2 Isc=0 Ikr=0 Rc=1
++		Cjc=7.306p Mjc=.3416 Vjc=.75 Fc=.5 Cje=22.01p Mje=.377 Vje=.75
++		Tr=46.91n Tf=411.1p Itf=.6 Vtf=1.7 Xtf=3 Rb=10)
+*		National	pid=19		case=TO18
+*               88-09-07 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N2222A NPN(Is=14.34f Xti=3 Eg=1.11 Vaf=74.03 Bf=255.9 Ne=1.307
++               Ise=14.34f Ikf=.2847 Xtb=1.5 Br=6.092 Nc=2 Isc=0 Ikr=0 Rc=1
++               Cjc=7.306p Mjc=.3416 Vjc=.75 Fc=.5 Cje=22.01p Mje=.377 Vje=.75
++               Tr=46.91n Tf=411.1p Itf=.6 Vtf=1.7 Xtf=3 Rb=10)
+*               National        pid=19          case=TO18
+*               88-09-07 bam    creation
+*----------------------------------------------------------------------------
+
+* high voltage bipolar transistor *
+***********************************
+*----------------------------------------------------------------------------
+.model Q2N3439  NPN(Is=2.644p Xti=3 Eg=1.11 Vaf=100 Bf=1.557K Ne=1.305
++		Ise=5.292p Ikf=38.4m Xtb=1.5 Br=10.22 Nc=2 Isc=0 Ikr=0 Rc=6
++		Cjc=24.28p Mjc=.4169 Vjc=.75 Fc=.5 Cje=105.8p Mje=.3681 Vje=.75
++		Tr=303.6n Tf=2.033n Itf=5 Vtf=10 Xtf=20 Rb=10)
+*		Motorola	pid=2N3439	case=TO39
+*               88-09-15 bam    creation
+*----------------------------------------------------------------------------
+.model Q2N5416  PNP(Is=77.48f Xti=3 Eg=1.11 Vaf=100 Bf=53.77 Ne=1.67 Ise=4.061p
++		Ikf=1.205 Xtb=1.5 Br=5.622 Nc=2 Isc=0 Ikr=0 Rc=1.3 Cjc=44.48p
++		Mjc=.4495 Vjc=.75 Fc=.5 Cje=148.7p Mje=.4081 Vje=.75 Tr=617.4n
++		Tf=3.386n Itf=.5 Vtf=8 Xtf=40 Rb=10)
+*		Motorola	pid=2N5415	case=TO39
+*               88-09-15 bam    creation
+
+* power transistors *
+*********************
+*----------------------------------------------------------------------------
+.model NSC_4A   NPN(Is=457.5f Xti=3 Eg=1.11 Vaf=50 Bf=156.7 Ise=1.346p Ne=1.34
++               Ikf=3.296 Nk=.5961 Xtb=2.2 Br=7.639 Isc=604.1f Nc=2.168
++               Ikr=8.131m Rc=91.29m Cjc=278.7p Mjc=.385 Vjc=.75 Fc=.5 Cje=433p
++               Mje=.5 Vje=.75 Tr=1.412u Tf=37.34n Itf=35.68 Xtf=1.163 Vtf=10
++               Rb=.1)
+*               National Semiconductor
+*               Transistor Databook, 1982, process 4A, pg 9-7
+*               30 Nov 90       pwt     creation
+*----------------------------------------------------------------------------
+.model Q2N3055  NPN(Is=974.4f Xti=3 Eg=1.11 Vaf=50 Bf=99.49 Ne=1.941
++               Ise=902.5p Ikf=4.029 Xtb=1.5 Br=2.949 Nc=2 Isc=0 Ikr=0 Rc=.1
++               Cjc=276p Vjc=.75 Mjc=.3333 Fc=.5 Cje=569.1p Vje=.75 Mje=.3333
++               Tr=971.7n Tf=39.11n Itf=20 Vtf=10 Xtf=2 Rb=.1)
+*               Texas Inst.     pid=2N3055      case=TO3
+*               Original Library
+
+* MOSFET *
+*********************
+.model IRF540	NMOS(Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 Xj=0
++		Tox=100n Uo=600 Phi=.6 Rs=21.34m Kp=20.71u W=.94 L=2u Vto=3.136
++		Rd=22.52m Rds=444.4K Cbd=2.408n Pb=.8 Mj=.5 Fc=.5 Cgso=1.153n
++		Cgdo=445.7p Rg=5.557 Is=2.859p N=1 Tt=142n)
+
+
+
+.model IRF640	NMOS(Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 Xj=0
++		Tox=100n Uo=600 Phi=.6 Rs=19.61m Kp=20.73u W=.66 L=2u Vto=3.788
++		Rd=95.58m Rds=888.9K Cbd=1.872n Pb=.8 Mj=.5 Fc=.5 Cgso=1.745n
++		Cgdo=334.7p Rg=2.954 Is=16.39p N=1 Tt=312n)
+
+
+.model IRF730	NMOS(Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 Xj=0
++		Tox=100n Uo=600 Phi=.6 Rs=27.94m Kp=20.5u W=.43 L=2u Vto=3.474
++		Rd=.8665 Rds=1.778MEG Cbd=701.9p Pb=.8 Mj=.5 Fc=.5 Cgso=1.352n
++		Cgdo=146.9p Rg=.8327 Is=34.73p N=1 Tt=515n)
+
+.model IRF840	NMOS(Level=3 Gamma=0 Delta=0 Eta=0 Theta=0 Kappa=0.2 Vmax=0 Xj=0
++		Tox=100n Uo=600 Phi=.6 Rs=6.382m Kp=20.85u W=.68 L=2u Vto=3.879
++		Rd=.6703 Rds=2.222MEG Cbd=1.415n Pb=.8 Mj=.5 Fc=.5 Cgso=1.625n
++		Cgdo=133.4p Rg=.6038 Is=56.03p N=1 Tt=710n)
+
