@@ -1,7 +1,0 @@
-Circuit: * C:\Users\under\OneDrive - Universidad de Oviedo\Uni\Y2T1\TEC\PL\S5\Draft1.asc
-
-Error on line 3 : r1 n003 n002 r
-	 Unable to find definition of model "r"
-Error on line 5 : l1 n001 p001 l
-	 Unknown parameter "l"
-Fatal Error: Missing inductance value for "L1"
